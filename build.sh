@@ -25,12 +25,12 @@ cat << _EOF_
 #								#
 #______________________________________________________________ #
 #								#                                                              
-
-```````````````````````````````````````````````````````````
-
-NOTE YOU CAN ONLY USE THIS TO BUILD PROTOBUF > 2.6.1
-
-```````````````````````````````````````````````````````````
+#
+# ```````````````````````````````````````````````````````````
+#
+#  NOTE: YOU CAN ONLY USE THIS TO BUILD PROTOBUF 2.6.1
+#
+# ```````````````````````````````````````````````````````````
 
 
 Usage 
@@ -124,10 +124,3 @@ $NDK_HOME/ndk-build
 
 # mkdir -p $HOME/bin/protobuf/android/include/google/protobuf/
 # cp -r /tmp/protobuf-$2/src/google/protobuf $PREFIX/include/google/
-
-
-
-
-
-
-https://github.com/protoblock/protobuf-android.git
