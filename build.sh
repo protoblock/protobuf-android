@@ -119,5 +119,5 @@ $NDK_HOME/ndk-build
 # 5. Inspect the library architecture specific information
 # arm-linux-androideabi-readelf -A /tmp/protobuf-$2/src/.libs/libprotobuf-lite.a
 
-cp /tmp/protobuf-android/obj/local/armeabi-v7a/libprotobuf.a $QTLIBS/lib/libprotobuf.a
-cp -r /tmp/protobuf-android/src/google/protobuf $PREFIX/include/google/
+cp /tmp/protobuf-android/obj/local/armeabi-v7a/libprotobuf.a $QTLIBS/libprotobuf.a
+cp -r /tmp/protobuf-android/src/google/protobuf $QTINCLUDES/google/
