@@ -86,7 +86,9 @@ if [ $DEBUG == 1 ];
 fi
 
 
-
+## fixme better way to get qt inastall libs and includes
+QTINCLUDES=$($HOME/QT/5.6/android_armv7/bin/qmake -query QT_INSTALL_HEADERS)
+QTLIBS=$($HOME/QT/5.6/android_armv7/bin/qmake -query QT_INSTALL_LIBS)
 
 NDK_HOME=$HOME/Desktop/ndk/android-ndk-r11c
 export ANDROID_NDK_ROOT=$NDK_HOME
@@ -117,10 +119,5 @@ $NDK_HOME/ndk-build
 # 5. Inspect the library architecture specific information
 # arm-linux-androideabi-readelf -A /tmp/protobuf-$2/src/.libs/libprotobuf-lite.a
 
-# cp /tmp/protobuf-$2/src/.libs/libprotobuf.a $PREFIX/lib/libprotobuf.a
-# cp /tmp/protobuf-$2/src/.libs/libprotobuf-lite.a $PREFIX/lib/libprotobuf-lite.a
-# cp /tmp/protobuf-$2/src/.libs/libprotoc.a $PREFIX/lib/libprotoc.a
-
-
-# mkdir -p $HOME/bin/protobuf/android/include/google/protobuf/
-# cp -r /tmp/protobuf-$2/src/google/protobuf $PREFIX/include/google/
+cp /tmp/protobuf-android/obj/local/armeabi-v7a/libprotobuf.a $QTLIBS/lib/libprotobuf.a
+cp -r /tmp/protobuf-android/src/google/protobuf $PREFIX/include/google/
