@@ -108,7 +108,7 @@ fi
 
 wget https://github.com/google/protobuf/releases/download/v2.6.1/protobuf-2.6.1.tar.gz
 echo "Extracting protobuf 2.6.1"
-tar xf /tmp/protobuf-2.6.1tar.gz
+tar xf /tmp/protobuf-2.6.1.tar.gz
 
 cd /tmp/protobuf-2.6.1/
 
