@@ -120,4 +120,4 @@ $NDK_HOME/ndk-build
 # arm-linux-androideabi-readelf -A /tmp/protobuf-$2/src/.libs/libprotobuf-lite.a
 
 cp /tmp/protobuf-android/obj/local/armeabi-v7a/libprotobuf.a $QTLIBS/libprotobuf.a
-cp -r /tmp/protobuf-android/src/google/protobuf $QTINCLUDES/google/
+cp -r /tmp/protobuf-android/src/google/ $QTINCLUDES/google/
