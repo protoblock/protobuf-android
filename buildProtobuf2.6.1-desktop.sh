@@ -72,11 +72,6 @@ then
 fi
 
 
-if [ -z "$2" ]; 
-then
-	printHelp;
-fi
-
 DEBUG=0;
 case "$1" in
     -d|--debug|d|v|--verbose)
