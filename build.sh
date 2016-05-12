@@ -110,6 +110,7 @@ fi
 
 git clone https://github.com/protoblock/protobuf-android.git
 cd /tmp/protobuf-android
+
 $NDK_HOME/ndk-build
 
  

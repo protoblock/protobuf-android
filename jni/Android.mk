@@ -3,7 +3,9 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE    := libprotobuf
-
+LOCAL_C_INCLUDES := $(PROTO_PREFIX) \
+					$(PROTO_PREFIX)/src \
+					$(PROTO_PREFIX)/src/google/protobuf/stubs \
 LOCAL_SRC_FILES :=\
 	$(PROTO_PREFIX)/src/google/protobuf/descriptor_database.cc \
 	$(PROTO_PREFIX)/src/google/protobuf/descriptor.cc \
