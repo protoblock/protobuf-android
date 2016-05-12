@@ -113,7 +113,7 @@ tar xf /tmp/protobuf-2.6.1.tar.gz
 cd /tmp/protobuf-2.6.1/
 
 
-if [ $DEBUG eq 0 ];
+if [ $DEBUG == 0 ];
 then 
 ./configure --prefix=/usr/local/protobuf_2_6_1
 else
